@@ -1,5 +1,5 @@
 {{ appName }}
-<img [src]="imageUrl" width="220" />
+<img [src]="imageUrl" width="500" />
 <button (click)="showMessage()">Click Me</button>
 <p>What to eat next:</p>
 <input type="text" [(ngModel)] = "food" />
@@ -15,3 +15,50 @@
     <li>{{ language }}</li>
   }
 </ul>
+
+
+<p [ngClass]="isSuccess">Test</p>
+<style>
+  .success {
+    color: green;
+  }
+  .error {
+    color: red;
+  }
+</style>
+
+<p [ngStyle]="{color: isSuccess === 'success' ? 'green' : 'red'}">ngStyle</p>
+
+@switch(selectedTech) {
+  @case('Java') {
+    <p>You selected Java</p>
+  }
+
+  @case('Python') {
+    <p>You selected Python</p>
+  }
+
+  @case('Ruby') {
+  <p>You selected Ruby</p>
+  }
+  @case('C++') {
+    <p>You selected C++</p>
+  }
+  @default {
+    <p>Unknown</p>
+  }
+}
+
+<p>{{ text }}</p>
+<p>{{ text | uppercase }}</p>
+<p>{{ text | lowercase }}</p>
+<p>{{ text | titlecase }}</p>
+
+<p>{{ number }}</p>
+<p>Decimal Pipe: {{ number | number: '1.2-2'}}</p>
+
+<p>{{ currencyValue | currency : 'EUR'}}</p>
+
+<p>{{ text | slice: 2 : 8}}</p>
+
+<p>{{ user | json}}</p>

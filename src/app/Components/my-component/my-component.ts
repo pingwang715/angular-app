@@ -22,4 +22,15 @@ export class MyComponent {
   }
 
   languages = ['Java', 'C++', 'Python', 'Ruby', 'ABAP'];
+
+  isSuccess = 'success';
+
+  selectedTech = 'Angular';
+
+  text = 'a Spooky Halloween';
+
+  number = 1234.0000;
+  currencyValue = 1000;
+
+  user = {email: 'abc@123.com', password: 'password'};
 }
