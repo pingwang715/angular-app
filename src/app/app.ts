@@ -11,4 +11,11 @@ import { NewComponent } from './Components/new-component/new-component/new-compo
 })
 export class App {
   protected readonly title = signal('my-first-app');
+
+  parentMessage = 'Hello Child';
+
+  message = '';
+  receive(data: string) {
+    this.message = data;
+  }
 }

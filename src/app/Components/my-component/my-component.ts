@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -33,4 +33,11 @@ export class MyComponent {
   currencyValue = 1000;
 
   user = {email: 'abc@123.com', password: 'password'};
+
+  @Input() message = '';
+
+  @Output() notify = new EventEmitter();
+  sendMessage() {
+    this.notify.emit('Hello Parent');
+  }
 }

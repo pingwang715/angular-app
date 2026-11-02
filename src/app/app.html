@@ -1,3 +1,4 @@
 <h1>happy test</h1>
-<app-my-component></app-my-component>
+<h3>Parent component: {{ message }}</h3>
+<app-my-component [message]="parentMessage" (notify)="receive($event)"></app-my-component>
 <app-new-component></app-new-component>

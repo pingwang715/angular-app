@@ -62,3 +62,9 @@
 <p>{{ text | slice: 2 : 8}}</p>
 
 <p>{{ user | json}}</p>
+
+<h2>Child</h2>
+<p>Message from Parent: {{ message }}</p>
+
+<h3>Child Component</h3>
+<button (click)="sendMessage()">Send Message to Parent</button>
