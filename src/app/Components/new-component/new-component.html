@@ -1,9 +1,16 @@
 <p>new-component works!</p>
 <h3>Observable Output</h3>
 
-
+<!--
 <ul>
   @for(user of users; track user) {
     <li>{{ user.name }}</li>
+  }
+</ul> -->
+
+<ul>
+  @for(user of ($any(users$ | async) ?? []); track user) {
+
+    <li>{{ user | json}}</li>
   }
 </ul>

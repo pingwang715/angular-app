@@ -10,14 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class NewComponent implements OnInit {
 
-  users: any[] = [];
+  users$: any;
   constructor(private service: ObservableService) {}
 
   ngOnInit(): void {
-    this.service.getUsers().subscribe({
-      next: (data) => {
-        this.users = data;
-      },
-    });
+    this.users$ = this.service.getUsers();
   }
 }
