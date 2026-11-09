@@ -1,0 +1,28 @@
+<h2>Angular Template Form</h2>
+
+<form #f="ngForm">
+  <input
+    type="text"
+    name="username"
+    placeholder="Enter username"
+    minlength="3"
+    ngModel
+    #username="ngModel"
+  />
+
+  @if (username.invalid) {
+    <p style="color: red">Username must be at least 3 characters</p>
+  }
+  @if (f.invalid) {
+  <p stype="color: blue">The form is invalid</p>
+  }
+</form>
+
+<h2>Angular Reactive Form</h2>
+
+<form [formGroup]="usernameForm">
+  <input formControlName="username" type="text" placeholder="Enter username">
+  @if (username?.invalid) {
+    <p style="color: red">Username must be at least 3 characters</p>
+  }
+</form>

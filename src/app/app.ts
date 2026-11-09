@@ -3,9 +3,10 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { MyComponent } from './Components/my-component/my-component';
 import { NewComponent } from './Components/new-component/new-component';
 import { Employee } from './Services/employee/employee';
+import { FormComponent } from './Components/form-component/form-component';
 
 @Component({
-  imports: [RouterOutlet, MyComponent, NewComponent, Employee, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, MyComponent, NewComponent, Employee, RouterLink, RouterLinkActive, FormComponent],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
