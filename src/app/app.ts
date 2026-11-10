@@ -4,9 +4,10 @@ import { MyComponent } from './Components/my-component/my-component';
 import { NewComponent } from './Components/new-component/new-component';
 import { Employee } from './Services/employee/employee';
 import { FormComponent } from './Components/form-component/form-component';
+import { JwtComponent } from './Components/jwt-component/jwt-component';
 
 @Component({
-  imports: [RouterOutlet, MyComponent, NewComponent, Employee, RouterLink, RouterLinkActive, FormComponent],
+  imports: [RouterOutlet, MyComponent, NewComponent, Employee, RouterLink, RouterLinkActive, FormComponent, JwtComponent],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
