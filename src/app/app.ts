@@ -8,9 +8,11 @@ import { JwtComponent } from './Components/jwt-component/jwt-component';
 import { SignalComponent } from './Components/signal-component/signal-component';
 import { ViewchildComponent } from './Components/viewchild-component/viewchild-component';
 import { ContentprojectionComponent } from './Components/contentprojection-component/contentprojection-component';
+import { ContentchildComponent } from './Components/contentchild-component/contentchild-component';
+import { ContentchildrenComponent } from './Components/contentchildren-component/contentchildren-component';
 
 @Component({
-  imports: [RouterOutlet, MyComponent, NewComponent, Employee, RouterLink, RouterLinkActive, FormComponent, JwtComponent, SignalComponent, ViewchildComponent, ContentprojectionComponent],
+  imports: [RouterOutlet, MyComponent, NewComponent, Employee, RouterLink, RouterLinkActive, FormComponent, JwtComponent, SignalComponent, ViewchildComponent, ContentprojectionComponent, ContentchildComponent, ContentchildrenComponent],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

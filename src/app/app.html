@@ -29,3 +29,18 @@
     <p>Learn Angular</p>
   </app-contentprojection-component>
 </div>
+
+<div class="parent-box">
+  <h2>Parent Component</h2>
+  <app-contentchild-component>
+    <h3 #title>Udemy</h3>
+    <p>Learn Angular</p>
+  </app-contentchild-component>
+</div>
+
+<h2>Parent Component</h2>
+<app-contentchildren-component>
+  <p #course>Angular</p>
+  <p #course>React</p>
+  <p #course>JavaScript</p>
+</app-contentchildren-component>
